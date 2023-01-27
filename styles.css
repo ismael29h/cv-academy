@@ -5,12 +5,50 @@
     --ancho-barra: 250px;
 }
 
+.fa-solid.fa-gears {
+    width: 20px;
+    height: 20px;
+}
+
 body {
     color: white;
     font-size: 1.6rem;
     margin: 0;
     padding: 0;
-    background-image: url("./fondo.jpg");
+    background: linear-gradient(
+        45deg,
+        green,
+        blue,
+        red
+    );
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: rgb(50, 66, 50);
+    width: 100%;
+    height: 3rem;
+    margin: 0 auto;
+}
+
+header ul {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0.3rem;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #e9eec0;
+    cursor: pointer;
+}
+
+header ul li a:hover {
+    text-transform: uppercase;
 }
 
 main {
@@ -20,7 +58,7 @@ main {
     background-color: rgb(224, 216, 216);
     height: max-content;
     width: var(--ancho-cv);
-    margin: auto;
+    margin: 2rem auto 0;
 }
 
 h1 {
@@ -52,6 +90,10 @@ hr {
     text-transform: uppercase;
 }
 
+#cabecera h2 {
+    font-family: 'Tangerine', sans-serif;
+}
+
 #lateral {
     grid-column: 1/2;
     grid-row: 1/3;
@@ -62,9 +104,9 @@ hr {
 #lateral img {
     border-radius: 50%;
     max-width: 200px;
-    width: 200px;
     height: auto;
     padding: 40px;
+    width: 200px;
 }
 
 #principal {
@@ -106,4 +148,21 @@ hr {
 
 .relleno {
     margin-bottom: 40px;
+}
+
+
+@media (max-width: 700px) {
+    header {
+        height: max-content;
+    }
+    header ul {
+        flex-direction: column;
+    }
+    header ul li {
+        margin-bottom: 1rem;
+    }
+
+    main {
+        margin-top: 200px;
+    }
 }

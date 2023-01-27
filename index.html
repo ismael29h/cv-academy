@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
     <title>Proyecto para Academy</title>
 </head>
 <body>
     <header id="header">
-        header
-        <nav></nav>
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#Perfil">Perfil</a></li>
+                <li><a href="#Habilidades">Habilidades</a></li>
+                <li><a href="#Programas">Programas</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+                <li><a href="#Estudios">Estudios</a></li>
+                <li><a href="#Experiencia">Experiencia</a></li>
+                <li><a href="#Idiomas">Idiomas</a></li>
+                <li><button id="boton-recarga">Recargar página</button></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section id="cabecera">
@@ -21,12 +33,12 @@
             <img src="./foto.jpg" alt="foto">
             <div class="relleno"></div>
             <article class="info">
-                <h3>Perfil</h3>
+                <h3 id="Perfil">Perfil</h3>
                 <p>Soy un profesional con más de 10 años de experiencia en el sector de desarrollador frontend.</p>
             </article>
             <div class="relleno"></div>
             <article class="info">
-                <h3>Habilidades</h3>
+                <h3 id="Habilidades">Habilidades</h3>
                 <p>
                     <ul>
                         <li>Trabajo en equipo</li>
@@ -37,7 +49,7 @@
             </article>
             <div class="relleno"></div>
             <article class="info">
-                <h3>Programas</h3>
+                <h3 id="Programas">Programas</h3>
                 <p>
                     <ul>
                         <li>Excel</li>
@@ -49,7 +61,7 @@
             </article>
             <div class="relleno"></div>
             <article class="info">
-                <h3>Contacto</h3>
+                <h3 id="Contacto">Contacto</h3>
                 <p>
                     <ul>
                         <li>Ubicación: 4659 Mcclellan Rd</li>
@@ -62,7 +74,7 @@
         </section>
         <section id="principal">
             <article class="info">
-                <h3>Estudios</h3>
+                <h3 id="Estudios">Estudios</h3>
                 <ul>
                     <li>Título: Analista de Sistemas</li>
                     <li>Instituto: <strong>Universidad Tecnológica Nacional</strong></li>
@@ -72,13 +84,13 @@
                 <hr>
                 <ul>
                     <li>Título: Técnico Operador de PC</li>
-                    <li>Instituto: <strong>Nacional del Nordeste</strong></li>
+                    <li>Instituto: <strong>Universidad Nacional del Nordeste</strong></li>
                     <li>Ciudad: Resistencia, Chaco</li>
                     <li>Año: 2010</li>
                 </ul>
             </article>
             <article class="info">
-                <h3>Experiencia Profesional</h3>
+                <h3 id="Experiencia">Experiencia Profesional</h3>
                 <ul>
                     <li>Nombre de la empresa: <strong>Empresa falsa 123</strong></li>
                     <li>Puesto: Técnico de impresión</li>
@@ -110,13 +122,12 @@
                 <p></p>
             </article>
             <article class="info">
-                <h3>Idiomas</h3>
+                <h3 id="Idiomas">Idiomas</h3>
                 <!--No recomendable, pero lo quiero así en este caso-->
                 <p style="text-align:center">Español: Natal | Inglés: Intermedio | Francés: Básico</p>
             </article>
         </section>
     </main>
-
     <script src="./scripts.js"></script>
 </body>
 </html>
