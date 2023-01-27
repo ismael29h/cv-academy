@@ -17,9 +17,17 @@ main {
     grid-template-columns: var(--ancho-barra) calc(var(--ancho-cv) - var(--ancho-barra));
     grid-template-rows: 200px ;
     background-color: #eee;
-    height: 100vh;
+    height: max-content;
     width: var(--ancho-cv);
     margin: auto;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+hr {
+    margin: 30px;
 }
 
 #lateral,
@@ -34,6 +42,12 @@ main {
     grid-column: 2/3;
     grid-row: 1/2;
     background-color: rgb(66, 54, 54);
+}
+
+#cabecera h1,
+#cabecera h2 {
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #lateral {
@@ -57,17 +71,29 @@ main {
 
 .info {
     width: 100%;
-    margin: 10px 10px;
+    margin: 0px 10px;
 }
 
 .info h3 {
     text-align: center;
     text-transform: uppercase;
     background-color: rgb(54, 90, 104);
+    margin-top: 0;
 }
 
 .info p {
     padding-right: 1rem;
     padding-left: 1rem;
     color: black;
+}
+
+.info ul li {
+    list-style: none;
+    color: black;
+    margin-left: 0.1rem;
+    margin-bottom: 0.4rem;
+}
+
+.info ul li ul li {
+    list-style: initial;
 }
