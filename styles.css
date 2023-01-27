@@ -10,13 +10,14 @@ body {
     font-size: 1.6rem;
     margin: 0;
     padding: 0;
+    background-image: url("./fondo.jpg");
 }
 
 main {
     display: grid;
     grid-template-columns: var(--ancho-barra) calc(var(--ancho-cv) - var(--ancho-barra));
     grid-template-rows: 200px ;
-    background-color: #eee;
+    background-color: rgb(224, 216, 216);
     height: max-content;
     width: var(--ancho-cv);
     margin: auto;
@@ -41,7 +42,8 @@ hr {
 #cabecera {
     grid-column: 2/3;
     grid-row: 1/2;
-    background-color: rgb(66, 54, 54);
+    background-color: rgb(114, 59, 91);
+    margin-bottom: 20px;
 }
 
 #cabecera h1,
@@ -56,9 +58,10 @@ hr {
     background-color:rgb(235, 156, 169);
 }
 
+/*Foto de Perfil*/
 #lateral img {
     border-radius: 50%;
-    max-width: 150px;
+    max-width: 200px;
     width: 200px;
     height: auto;
     padding: 40px;
@@ -78,13 +81,16 @@ hr {
     text-align: center;
     text-transform: uppercase;
     background-color: rgb(54, 90, 104);
-    margin-top: 0;
+    margin: 0 auto;
+    width: 90%; 
+    border-radius: 10px;
 }
 
 .info p {
     padding-right: 1rem;
     padding-left: 1rem;
     color: black;
+    text-align: justify;
 }
 
 .info ul li {
@@ -96,4 +102,8 @@ hr {
 
 .info ul li ul li {
     list-style: initial;
+}
+
+.relleno {
+    margin-bottom: 40px;
 }
